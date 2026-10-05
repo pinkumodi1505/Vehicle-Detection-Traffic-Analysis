@@ -1,134 +1,154 @@
-# Vehicle-Detection-Traffic-Analysis
-AI-powered Vehicle Detection &amp; Traffic Analysis system using YOLO and OpenCV for detecting,
-classifying, counting, and analyzing vehicles such as cars, motorcycles, buses, and trucks from images, videos, and live camera feeds.
+# Vehicle Detection & Traffic Analysis
 
 ## Project Overview
 
+Vehicle Detection & Traffic Analysis is an AI-based computer vision project designed to detect and analyze vehicles from images, videos, and live camera input.
+
+The system uses YOLO-based object detection to identify vehicles, generate bounding boxes, provide confidence scores, and support further traffic analysis.
+
+## Project Objectives
+
+- Detect vehicles automatically using YOLO.
+- Classify detected vehicles.
+- Generate bounding boxes around vehicles.
+- Provide confidence scores for detections.
+- Process images and video input.
+- Support live webcam detection.
+- Count detected vehicles.
+- Display detection and traffic statistics.
+- Analyze detection performance.
+
 ## Vehicle Classes
+
+The system focuses on:
 
 - Car
 - Motorcycle
 - Bus
 - Truck
 
-## Project Modules
+## Team Work Division
 
-1. AI / YOLO
-2. Image Processing
-3. Core Integration
-4. UI & Visualization
-5. Testing & Performance
-6. Results & Demo
+### PINKU — AI / YOLO
 
-## Architecture
+Responsible for:
 
-Input
-
-
- ↓
-
-Image Processing
-
- ↓
-
-YOLO Detection
-
- ↓
-
-Vehicle Classification
-
- ↓
-
-Integration
-
- ↓
-
-UI
-
- ↓
-
-Testing
-
- ↓
-
-Final Results
-
-
-
-👥 Team Contributions
-
-As discussed, here is the final work division for our Vehicle Detection & Traffic Analysis project.
-Please focus on your assigned module and complete it properly.
-
-🔴 PINKU — AI / YOLO
-- Set up the pre-trained YOLO model
+- Pre-trained YOLO model setup
 - Vehicle detection
-- Vehicle classification: Car, Motorcycle, Bus, Truck
+- Vehicle classification
 - Bounding boxes
 - Confidence scores
-- Create the core detection function that other modules can use
+- Core detection function
 
-🔴 RAJ — Core Integration
-- Integrate the YOLO detection module with the application
+### PRITAM — Image Processing & I/O
+
+Responsible for:
+
+- Image preprocessing
+- Resizing
+- Brightness and contrast adjustment
+- Noise reduction
+- Frame extraction
+- Input validation
+- Saving processed outputs
+
+### RAJ — Core Integration
+
+Responsible for:
+
+- YOLO integration
 - Video detection
 - Live webcam detection
 - Vehicle counting
 - FPS/performance display
-- Connect different modules into one working system
+- Connecting project modules
 
-🔴 SANSKRITI — UI & Visualization
-- Design and develop the project interface
+### SANSKRITI — UI & Visualization
+
+Responsible for:
+
+- Project interface
 - Image/video/webcam selection
 - Detection result display
 - Vehicle statistics dashboard
 - Bounding-box visualization
-- Make the application clean and user-friendly
+- User-friendly interface
 
-🟠 PRITAM — Image Processing & I/O
-- Image preprocessing
-- Resizing
-- Brightness/contrast adjustments where required
-- Noise reduction where useful
-- Frame extraction
-- Input validation
-- Saving processed images/videos and outputs
+### SANTANU — Testing & Performance
 
-🟡 SANTANU — Testing & Performance
-- Test different images and videos
-- Test different traffic/lighting conditions
-- Check missed/incorrect detections
-- Measure detection performance/FPS
+Responsible for:
+
+- Testing different images and videos
+- Testing different traffic and lighting conditions
+- Checking missed and incorrect detections
+- Measuring FPS and performance
 - Accuracy/result analysis
-- Identify bugs and coordinate with the relevant member for fixes
+- Bug identification and coordination
 
-🟢 DEBANSHU — Results & Final Demo
-- Collect final outputs and screenshots
-- Prepare result tables/statistics
-- Maintain sample input/output cases
-- Prepare the final demo flow
+### DEBANSHU — Results & Final Demo
+
+Responsible for:
+
+- Final outputs and screenshots
+- Result tables and statistics
+- Sample input/output cases
+- Final demo flow
 - Presentation support
-- Document limitations and future scope
+- Limitations and future scope
 
-🔗 How everything connects
+## System Workflow
 
-PINKU: AI Detection
+```text
+Input Image / Video / Webcam
+            ↓
+    Image Processing & I/O
+            ↓
+       AI / YOLO
+            ↓
+    Vehicle Detection
+            ↓
+   Vehicle Classification
+            ↓
+ Bounding Box + Confidence
+            ↓
+       Core Integration
+            ↓
+ Vehicle Counting / FPS
+            ↓
+    UI & Visualization
+            ↓
+     Testing & Analysis
+            ↓
+      Final Results
 
-↓
 
-PRITAM: Image Processing / Input-Output
 
-↓
-
-RAJ: Integration + Video/Webcam + Counting
-
-↓
-
-SANSKRITI: UI & Visualization
-
-↓
-
-SANTANU: Testing & Performance
-
-↓
-
-DEBANSHU: Final Results & Demo
+                    GITHUB
+                       │
+                       ▼
+                    main
+                       │
+       ┌───────────────┼────────────────┐
+       │               │                │
+       ▼               ▼                ▼
+   PINKU            PRITAM             RAJ
+   AI/YOLO       Image Processing   Integration
+       │               │                │
+       └───────────────┼────────────────┘
+                       ▼
+                   SANSKRITI
+                       UI
+                       │
+                       ▼
+                   SANTANU
+              Testing & Performance
+                       │
+                       ▼
+                  DEBANSHU
+              Results & Final Demo
+                       │
+                       ▼
+                    MAIN
+                       │
+                       ▼
+             FINAL PROJECT DEMO

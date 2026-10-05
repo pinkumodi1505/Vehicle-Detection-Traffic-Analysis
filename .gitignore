@@ -1,19 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
 venv/
 .venv/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+env/
+ENV/
 
+# YOLO / Ultralytics
+runs/
+*.pt
+*.onnx
+*.engine
+
+# Model weights
+models/*.pt
+models/*.onnx
+
+# OpenCV / generated outputs
+output/
+outputs/
+results/
+temp/
+tmp/
+
+# Uploaded/input media
+input/
+inputs/
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
 .vscode/
 .idea/
 
-runs/
-*.cache
+# OS files
+.DS_Store
+Thumbs.db
 
-*.pt
+# Python environment/config
+*.log
 
-data/input/*
-data/output/*
-
-DEBANSHU/results_demo/sample_outputs/*
+# Environment variables
+.env
