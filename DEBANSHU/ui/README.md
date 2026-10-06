@@ -1,4 +1,4 @@
-# SANSKRITI — UI & Visualization
+# DEBANSHU — UI & Visualization
 
 ## Role
 

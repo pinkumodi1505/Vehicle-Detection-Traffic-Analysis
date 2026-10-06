@@ -63,7 +63,7 @@ Responsible for:
 - FPS/performance display
 - Connecting project modules
 
-### SANSKRITI — UI & Visualization
+### DEBANSHU — UI & Visualization
 
 Responsible for:
 
@@ -85,7 +85,7 @@ Responsible for:
 - Accuracy/result analysis
 - Bug identification and coordination
 
-### DEBANSHU — Results & Final Demo
+### SANSKRITI — Results & Final Demo
 
 Responsible for:
 
@@ -136,7 +136,7 @@ Input Image / Video / Webcam
        │               │                │
        └───────────────┼────────────────┘
                        ▼
-                   SANSKRITI
+                   DEBANSHU
                        UI
                        │
                        ▼
@@ -144,7 +144,7 @@ Input Image / Video / Webcam
               Testing & Performance
                        │
                        ▼
-                  DEBANSHU
+                  SANSKRITI
               Results & Final Demo
                        │
                        ▼
