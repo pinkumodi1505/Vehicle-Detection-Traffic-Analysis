@@ -40,3 +40,5 @@ It also handles saving the processed results produced by the application.
 - OpenCV
 - NumPy
 - PIL/Pillow
+
+#pritam
