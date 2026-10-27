@@ -1188,13 +1188,8 @@ elif page == "About & Team":
 
         ("RJ", "RAJ JHA", "Team Lead · Core Integration & Dashboard UI/Visualization", "Integrates detection, tracking, counting and video processing into the main application workflow, and also worked on the dashboard UI and visualization."),
 
-<<<<<<< Updated upstream
-        ("PM", "PINKU MODI", "Developed the YOLO-based vehicle detection module using Python and OpenCV to detect and classify cars, motorcycles, buses, and trucks from images and video. Implemented bounding-box visualization, confidence scoring, and structured detection outputs for integration with the project's tracking and traffic-counting pipeline."),
-        
-=======
         ("PM","PINKU MODI","AI / YOLO Developer","Built a Python/OpenCV YOLO module to detect and classify cars, motorcycles, buses, and trucks in images and videos, with bounding boxes, confidence scores, and structured outputs for tracking and traffic counting."),
 
->>>>>>> Stashed changes
         ("PS", "PRITAM SINGH", "Image Processing & Preprocessing", "Implements frame validation, resizing, brightness/contrast adjustment and noise reduction."),
 
         ("DP", "DEBANSHU PATRA", "Dashboard UI & Visualization Contributor", "Contributed to the dashboard interface, visual presentation and user-facing results."),
