@@ -52,27 +52,28 @@ Responsible for:
 - Input validation
 - Saving processed outputs
 
-### RAJ — Core Integration
+### RAJ — Core Integration & Dashboard UI/Visualization
+
+Responsibilities:
+
+- YOLO model integration and video detection
+- Live webcam detection and vehicle counting
+- FPS monitoring and performance optimization
+- Integration of all project modules
+- Development of the project interface and user-friendly dashboard
+- Image, video and webcam input selection
+- Detection result display and vehicle statistics visualization
+- Bounding-box visualization for detected vehicles
+
+### DEBANSHU — Dashboard UI & Visualization Support
 
 Responsible for:
 
-- YOLO integration
-- Video detection
-- Live webcam detection
-- Vehicle counting
-- FPS/performance display
-- Connecting project modules
-
-### DEBANSHU — UI & Visualization
-
-Responsible for:
-
-- Project interface
-- Image/video/webcam selection
-- Detection result display
-- Vehicle statistics dashboard
-- Bounding-box visualization
-- User-friendly interface
+- Assisted in designing and developing the project dashboard UI.
+- Contributed to dashboard layout, styling and visual elements.
+- Helped improve the user interface and overall user experience.
+- Supported visualization of vehicle detection results and statistics.
+- Assisted in creating a clean, interactive and user-friendly dashboard.
 
 ### SANTANU — Testing & Performance
 

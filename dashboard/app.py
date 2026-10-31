@@ -2,7 +2,6 @@ import hashlib
 
 import sys
 import subprocess
-import subprocess
 
 import tempfile
 
@@ -140,11 +139,58 @@ p,li,label,div[data-testid="stMarkdownContainer"]{{line-height:1.6}}
 
 [data-testid="stSidebar"] label, [data-testid="stSidebar"] p{{font-size:1rem!important}}
 
-.stButton>button,.stDownloadButton>button{{border-radius:10px;min-height:45px;font-weight:700;font-size:1rem;border:1px solid var(--border);transition:transform .18s ease,box-shadow .18s ease,background .18s ease}}
-
-.stButton>button:hover,.stDownloadButton>button:hover{{transform:translateY(-2px);box-shadow:0 7px 20px #0002;border-color:var(--accent)}}
-
-.stButton>button[kind="primary"]{{background:var(--accent);color:#071B19;border:0}}
+/* Global button styling: readable in both Dark and Light themes */
+.stButton > button,
+.stDownloadButton > button{{
+    background:var(--panel2) !important;
+    color:var(--text) !important;
+    border:1px solid var(--border) !important;
+    border-radius:10px !important;
+    min-height:45px;
+    font-weight:700 !important;
+    font-size:1rem;
+    transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+}}
+.stButton > button p,
+.stButton > button span,
+.stDownloadButton > button p,
+.stDownloadButton > button span{{ color:var(--text) !important; }}
+.stButton > button:hover,
+.stDownloadButton > button:hover{{
+    background:var(--panel) !important;
+    color:var(--text) !important;
+    transform:translateY(-2px);
+    box-shadow:0 7px 20px #0002;
+    border-color:var(--accent) !important;
+}}
+.stButton > button[kind="primary"],
+.stDownloadButton > button[kind="primary"]{{
+    background:var(--accent) !important;
+    color:#FFFFFF !important;
+    border:1px solid var(--accent) !important;
+}}
+.stButton > button[kind="primary"] p,
+.stButton > button[kind="primary"] span,
+.stDownloadButton > button[kind="primary"] p,
+.stDownloadButton > button[kind="primary"] span{{ color:#FFFFFF !important; }}
+.stButton > button[kind="primary"]:hover,
+.stDownloadButton > button[kind="primary"]:hover{{
+    filter:brightness(.92);
+    box-shadow:0 5px 15px #3478f640;
+}}
+/* Sidebar navigation follows the same theme-aware colors */
+[data-testid="stSidebar"] .stButton > button{{
+    background:var(--panel2) !important;
+    color:var(--text) !important;
+}}
+[data-testid="stSidebar"] .stButton > button p,
+[data-testid="stSidebar"] .stButton > button span{{ color:var(--text) !important; }}
+[data-testid="stSidebar"] .stButton > button[kind="primary"]{{
+    background:var(--accent) !important;
+    color:#FFFFFF !important;
+}}
+[data-testid="stSidebar"] .stButton > button[kind="primary"] p,
+[data-testid="stSidebar"] .stButton > button[kind="primary"] span{{ color:#FFFFFF !important; }}
 
 div[data-testid="stMetric"]{{background:var(--panel);border:1px solid var(--border);padding:15px;border-radius:13px}}
 
@@ -1190,13 +1236,13 @@ elif page == "About & Team":
 
         ("PM","PINKU MODI" ,"AI / YOLO Developer","Built a Python/OpenCV YOLO module to detect and classify cars, motorcycles, buses, and trucks in images and videos, with bounding boxes, confidence scores, and structured outputs for tracking and traffic counting."),
 
-        ("PS", "PRITAM SINGH", "Image Processing & Preprocessing", "Implements frame validation, resizing, brightness/contrast adjustment and noise reduction."),
+        ("PS", "PRITAM SINGH", "Image Processing & Preprocessing", "Optimized traffic images through preprocessing, contrast enhancement, and noise reduction to improve YOLO-based vehicle detection performance."),
 
         ("DP", "DEBANSHU PATRA", "Dashboard UI & Visualization Contributor", "Contributed to the dashboard interface, visual presentation and user-facing results."),
 
         ("ST", "SANSKRITI THAKUR", "Documentation & Results Demo", "Organizes project documentation, results and demonstration materials."),
 
-        ("SP", "SANATANU PAL", "Traffic Data Collection & Testing", "Collects traffic videos/images and supports testing across different traffic conditions."),
+        ("SP", "SANTANU PAL", "Traffic Data Collection & Testing", "Collects traffic videos/images and supports testing across different traffic conditions."),
 
     ]
 
@@ -1235,3 +1281,4 @@ st.markdown(
     unsafe_allow_html=True,
 
 )
+
